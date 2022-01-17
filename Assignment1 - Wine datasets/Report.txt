@@ -1,0 +1,25 @@
+The two most prominent features are the first two features of the decision tree alcohol and volatile acidity gor the white wine dataset and alcohol and free sulfur dioxide for the red wine dataset.
+
+I set max_depth to 9 out of 11. This means that the decision tree won't be deeper than nine nodes. This helps us to avoid overfitting.
+
+By experimenting with 3 values for the alpha parameter (0.01, 0.001, 0.0001), we can understand from the diagram that smaller numbers converge more quickly. 
+
+By setting aplha to a very small value, regularization has very little effect.
+
+When creating the linear model for one feature we do not have to normalize the data because the values are close enough and there aren't many outliers.
+
+In case we are creating the model using all the features, normalizations is needed. Z-score is used to normalize the data and finally we get mean close to 0 and standard deviation close to 1.
+
+The second step is to set the alpha parameter and call the gradient descent function which calculates the weights w0, w1 and the cost using the equations we learnt in class notes.
+
+We repeat the last step for as many iterations as we have set or until cost converges. (I have chosen to use iterations as we are not always sure that the cost will converge)
+
+In linear regression the outcome is continuous but in logistic regression is discrete. 
+
+Logistic Regression uses logarithmic function to estimate the cost instead of least squares function that is used during linear regression. S
+
+quare error doesn't fit to logistic regression because hypothesis is non-linear, so square error is non-convex.
+
+
+
+
